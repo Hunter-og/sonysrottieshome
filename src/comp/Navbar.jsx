@@ -1,16 +1,35 @@
-import React from 'react';
+import React, { useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { FaTimes } from "react-icons/fa";
 
 export default function Navbar() {
+  const [Mobile, setMobile] = useState(false);
+  const togglemobile = () => {
+    setMobile(!Mobile);
+  };
+
   return (
     <div>
-      {/* Navbar Section */}
-      <div className='flex flex-col md:flex-row justify-between text-center p-6 bg-gray-800 h-auto md:h-[15vh] items-center'>
-        <h1 className='text-white text-2xl md:text-4xl font-serif'>
-          Sonyrotties<span className='text-black font-semibold text-2xl md:text-4xl'>Home</span>
+      {/* Navbar */}
+      <div className='flex flex-col md:flex-row justify-between items-center p-6 bg-gray-800'>
+        {/* Logo */}
+        <h1 className='text-white text-2xl font-serif '>
+          my content<span className='text-black font-semibold'></span>
         </h1>
-        <ul className='flex flex-col md:flex-row gap-4 md:gap-8 items-center text-center text-white'>
+
+        {/* Mobile Menu Toggle */}
+        <div className='md:hidden '>
+          {Mobile ? (
+            <FaTimes className='text-white text-2xl' onClick={togglemobile} />
+          ) : (
+            <GiHamburgerMenu className='text-white text-2xl' onClick={togglemobile} />
+          )}
+        </div>
+
+        {/* Menu Items */}
+        <ul className={`flex flex-col md:flex-row gap-4 md:gap-8 text-center text-white ${Mobile ? 'block' : 'hidden'} md:flex`}>
           <li className='hover:text-gray-400'>Home</li>
-          <li className='hover:text-gray-400'>Available Puppies</li>
+          <li className='hover:text-gray-400'>Available</li>
           <li className='hover:text-gray-400'>About</li>
           <li className='hover:text-gray-400'>Testimonials</li>
           <li className='hover:text-gray-400'>Shipping & Delivery</li>
@@ -20,9 +39,8 @@ export default function Navbar() {
         </ul>
       </div>
 
-      {/* Main Content Section */}
-      <div className='bg flex justify-center'>
-        <div className='w-full max-w-4xl h- p-6 md:p-12 bg-gray-700 bg-opacity-50 rounded-lg text-center'>
+      <div className=' bg bg-opacity-50 p-6 md:p-12 flex justify-center'>
+        <div className='w- max-w-4xl bg-gray-800 bg-opacity-60 rounded-lg text-center'>
           <h1 className='text-green-300 font-bold text-3xl md:text-5xl mt-6 font-serif'>
             SonyrottiesHome
           </h1>
