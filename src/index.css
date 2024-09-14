@@ -10,12 +10,19 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
     
     
 }
 
 @media (max-width: 768px) {
     .bg {
-        background-image: url(./assets/IMG-20240901-WA0008.jpg);
+        background-image: url(./assets/IMG-20240901-WA0004.jpg);
+        position: relative;
+        height: 70vh;
+        margin-top: 00px;
+        width: 100;
+        margin-top: 400px;
+        
     }
 }
