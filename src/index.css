@@ -19,10 +19,10 @@
     .bg {
         background-image: url(./assets/IMG-20240901-WA0004.jpg);
         position: relative;
-        height: 70vh;
+        height: 100vh;
         margin-top: 00px;
         width: 100;
-        margin-top: 400px;
+        
         
     }
 }
