@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     <div className='relative'>
-      <div className=' flex justify-between gap-20 items-center p-[40px] bg-[#0c0c0ce3] h-[15vh] sm: h-5 '>
+      <div className=' flex justify-between gap-20 items-center p-[40px] bg-[#0c0c0ce3] h-[15vh] '>
         <h1 className='text-white text-2xl font-serif'>
           Sonyrotties<span className=' text-[#1eff00] font-semibold'>Home</span>
         </h1>
