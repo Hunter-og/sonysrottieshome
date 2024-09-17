@@ -1,6 +1,8 @@
 import React from 'react'
-import Navbar from '../comp/Navbar'
-import Home from '../comp/Home'
+import Navbar from '../comp/home/Navbar'
+import Home from '../comp/home/Home'
+import Welcome from '../comp/home/Welcome'
+
 
 
 export default function Landingpage() {
@@ -8,6 +10,7 @@ export default function Landingpage() {
     <div>
     <Navbar/>
     <Home/>
+    <Welcome/>
     </div>
   )
 }
