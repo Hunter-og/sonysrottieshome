@@ -6,6 +6,7 @@ import Choose from '../comp/home/choose'
 
 
 
+
 export default function Landingpage() {
   return (
     <div>

@@ -47,7 +47,7 @@ export default function Choose() {
                     key={index} 
                     className='shadow mt-[20px] h-[40vh] flex flex-col items-center justify-center transition-all duration-300'
                 >
-                    <div className='text-[#1eff00] mt-[20px]'>{eachlist.icon}</div>
+                    <div className='text-[#44ca32ea] mt-[20px]'>{eachlist.icon}</div>
                     <h1 className='text-[#3c93f7e5] font-extrabold text-[20px] mt-[20px]'>{eachlist.title}</h1>
                     <p className='text-[grey] w-[70%] items-center text-center mt-[10px]'>{eachlist.list}</p>
                 </div>
