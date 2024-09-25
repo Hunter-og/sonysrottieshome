@@ -22,6 +22,7 @@ export default function Navbar() {
             <GiHamburgerMenu className='text-white text-2xl cursor-pointer' onClick={toggleMobileMenu} />
           )}
         </div>
+        
         <ul className={`lg:flex gap-[25px] items-center lg:bg-transparent text-white ${mobileMenuOpen ? 'flex flex-col absolute top-full left-0 w-full  h-[40vh]  lg:static lg:flex-row  sm: bg-[#0c0c0cc0] sm:absolute ' : 'hidden'}`}>
           <li className=' hover:text-[#1eff00]'><a href="#home">Home</a></li>
           <li className=' hover:text-[#1eff00]'><a href="#available-puppies">Available Puppies</a></li>
@@ -32,6 +33,7 @@ export default function Navbar() {
           <li className=' hover:text-[#1eff00]'><a href="#privacy-policy">Privacy Policy</a></li>
           <li className=' hover:text-[#1eff00]'><a href="#contact">Contact</a></li>
         </ul>
+        
       </div>
     </div>
   );
