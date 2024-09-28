@@ -17,7 +17,7 @@ export default function Client() {
     ];
 
     return (
-        <div className="bg-[#adabab23] min-h-screen relative flex flex-col items-center">
+        <div className="bg-[#e4e1e109] min-h-screen relative flex flex-col items-center">
             <h1 className="text-center font-serif font-extrabold text-[#3c93f7e5] text-2xl mt-10">
                 What Our Clients Say
             </h1>

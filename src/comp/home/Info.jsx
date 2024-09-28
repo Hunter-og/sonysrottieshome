@@ -41,7 +41,7 @@ export default function Choose() {
     ];
 
     return (
-        <div className='bg-[#ccc9c93d] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4'>
+        <div className='bg-[#ccc9c93d] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4 mt-[50px]'>
             {lists.map((eachlist, index) => (
                 <div 
                     key={index} 
